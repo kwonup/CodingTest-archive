@@ -9,10 +9,5 @@ elif(a!=b and b==c and a!=c):
 elif(a==c and a!=b and b!=c):
     prize=1000+(a*100)
 else:
-    if(a>b and a>c):
-        prize=a*100
-    elif(b>a and b>c):
-        prize=b*100
-    else:
-        prize+=c*100
+    prize=max(a,b,c)*100
 print(prize)
