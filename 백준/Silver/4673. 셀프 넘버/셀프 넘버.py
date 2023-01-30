@@ -1,12 +1,12 @@
 a=list(range(1,10001))
-for i in range(1,10001):
-    n=i
-    sum=n
-    while 1:
-        sum+=n%10
-        n=n//10 #//는 몫 연산자
-        if n<1: break
-    if sum in a:
-        a.remove(sum)
-for i in range(len(a)):
-    print(a[i])
+b=[]
+for i in a:
+    sum=i
+    for j in str(sum):
+        sum+=int(j)
+    if sum<=10000:
+        b.append(sum)
+for i in set(b):
+    a.remove(i)
+for i in a:
+    print(i)
