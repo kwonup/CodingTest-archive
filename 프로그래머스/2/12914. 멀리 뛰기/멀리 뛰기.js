@@ -3,7 +3,7 @@ function solution(n) {
     let a=1,b=1;
     let mod=1234567;
     for(let i=2;i<=n;i++){
-        let next = a%mod + b%mod;
+        let next = a%mod + b%mod; // 나머지연산의 이유 : 큰 수의 오버플로우를 방지하고, JavaScript에서 안전한 정수 범위 내에서 계산을 유지하도록 도와줍니다.
         a=b;
         b=next;
     }
