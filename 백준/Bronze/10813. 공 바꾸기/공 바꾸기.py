@@ -1,10 +1,7 @@
-n,m=map(int,input().split())
-basket = [i+1 for i in range(n)]
-for x in range(m):
-    i,j=map(int,input().split())
-    tmp = basket[i-1]
-    basket[i-1] = basket[j-1]
-    basket[j-1] = tmp
-for i in range(n):
-    print(basket[i],end=' ')
-
+n,m = map(int,input().split())
+list=[i+1 for i in range(n)]
+for i in range (m):
+    a,b=map(int,input().split())
+    list[a-1],list[b-1]=list[b-1] ,list[a-1]
+for i in range (n):
+    print(list[i], end=' ')
