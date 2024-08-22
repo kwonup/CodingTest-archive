@@ -1,8 +1,7 @@
-n=int(input())
-a=list(map(int,input().split()))
-M=max(a)
-sum=0
-for i in range(n):
-    a[i]=a[i]/M*100
-    sum+=a[i]
-print(sum/n)
+n = int(input())
+scores = list(map(int,input().split()))
+M = max(scores)
+avg = 0
+for i in scores:
+    avg+=i/M*100
+print(avg/n)
