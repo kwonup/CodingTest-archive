@@ -19,6 +19,5 @@ while subline: #보조 대기열 순회
     if subline.pop() == num:
         num+=1
     else:
-        break                       
-if len(subline)==0: print("Nice")
-else : print("Sad")
+        break             
+print("Nice" if len(subline)==0 else "Sad")
