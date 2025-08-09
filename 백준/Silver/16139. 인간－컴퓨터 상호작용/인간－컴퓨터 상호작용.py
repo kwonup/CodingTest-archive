@@ -1,3 +1,5 @@
+
+#[백준] 16139 인간-컴퓨터 상호작용 (실버1)
 import sys
 input = sys.stdin.readline
 
